@@ -15,7 +15,7 @@
 
         <p>Hai Sobat. Selamat datang di Katik :) Sebuah web apps sederhana yang berfungsi untuk menghitung nilai luas dan keliling bangun datar.</p>
 
-        <!-- Nvigation  -->
+        <!-- Navigation  -->
         <nav>
             <a class="bg-blue" href="">Segitiga</a>
             <a class="bg-red" href="">Jajar Genjang</a>
@@ -33,7 +33,7 @@
             <!-- Konten Luas -->
             <div class="formula-img img-luas"></div>
 
-            <p>Rumus luas segitiga = 1/2 x alas x tinggi</p>
+            <p>Rumus luas segitiga = 1/2 * alas * tinggi</p>
 
             <!-- Form Luas -->
             <form>
@@ -43,16 +43,17 @@
 
                 <div>
                     <label for="alas">Alas</label>
-                    <input type="number" id="alas" name="alas" placeholder="Masukkan Alas Segitiga">
+                    <input type="number" id="alas" name="alas" placeholder="Masukkan Alas Segitiga" required>
                 </div>
 
                 <div>
                     <label for="tinggi">Tinggi</label>
-                    <input type="number" id="tinggi" name="tinggi" placeholder="Masukkan Tinggi Segitiga">
+                    <input type="number" id="tinggi" name="tinggi" placeholder="Masukkan Tinggi Segitiga" required>
                 </div>
 
                 <div>
-                    <button>Hitung</button>
+                    <button type="button" id="calc-luas" onclick="calcLuas()">Hitung</button>
+                    <button>Reset</button>
                 </div>
             </form>
         </section>
@@ -66,7 +67,7 @@
             <!-- Konten Keliling -->
             <div class="formula-img img-keliling"></div>
 
-            <p>Rumus Keliling Segitiga = 3 x sisi</p>
+            <p>Rumus Keliling Segitiga = 3 * sisi</p>
 
             <!-- Form Keliling -->
             <form>
@@ -76,21 +77,22 @@
 
                 <div>
                     <label for="sisi">Sisi A</label>
-                    <input type="number" id="sisi a" name="sisi a" placeholder="Masukkan Sisi A Segitiga">
+                    <input type="number" id="sisi-a" name="sisi-a" placeholder="Masukkan Sisi A Segitiga" required>
                 </div>
 
                 <div>
                     <label for="tinggi">Sisi B</label>
-                    <input type="number" id="sisi b" name="sisi b" placeholder="Masukkan Sisi B Segitiga">
+                    <input type="number" id="sisi-b" name="sisi-b" placeholder="Masukkan Sisi B Segitiga" required>
                 </div>
 
                 <div>
                     <label for="tinggi">Sisi C</label>
-                    <input type="number" id="sisi c" name="sisi c" placeholder="Masukkan Sisi C Segitiga">
+                    <input type="number" id="sisi-c" name="sisi-c" placeholder="Masukkan Sisi C Segitiga" required>
                 </div>
 
                 <div>
-                    <button>Hitung</button>
+                    <button type="button" id="calc-keliling" onclick="calcKeliling()">Hitung</button>                              
+                    <button>Reset</button>
                 </div>
             </form>
         </section>
@@ -100,5 +102,8 @@
     <footer>
         <p>&copy; 2025 Fredo. All rights reserved.</p>
     </footer>
+
+    <!-- Javascript External -->
+    <script src="js\script.js"></script>
 </body>
 </html>
